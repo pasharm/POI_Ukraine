@@ -99,10 +99,10 @@
   
   
    <!-- тело пресета (groups) -->
-  <group name="POI Ukraine" ru.name="POI Украина" uk.name="POI Україна" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/Ukraine.png">
+  <group name="POI Ukraine" ru.name="POI Украина" uk.name="POI Україна" icon="Icon/Ukraine.png">
   
         <!-- ПРОДУКТЫ -->
-    <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/Produkty.png">
+    <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="Icon/Produkty/Produkty.png">
       
           <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/ATB-market.png" >
         <label text="Супермаркет &quot;АТБ-маркет&quot;" />
@@ -129,7 +129,7 @@
           
           <!-- ОБЩЕПИТ -->
           
-          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/Obwepit.png">
+          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="icon/Obschepit/Obschepit.png">
       
           <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/Dominos_pizza.png" >
         <label text="Domino's Pizza" />

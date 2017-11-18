@@ -103,7 +103,7 @@
         <!-- ПРОДУКТЫ -->
     <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="icon/produkty/produkty.png">
       
-          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/ATB-market.png" >
+          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/atbmarket.png" >
         <label text="Супермаркет &quot;АТБ-маркет&quot;" />
         <space />
         <key key="shop" value="supermarket" />

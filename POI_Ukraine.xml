@@ -1,7 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Mokrynskyi Pavlo"
-  version="9_2017-11-18"
+  version="9_2017-11-18_2"
   link="https://josm.openstreetmap.de/wiki/Presets/POI_Ukraine"
   shortdescription="POI Ukraine"
   ru.shortdescription="POI Украины"
@@ -99,12 +98,12 @@
   
   
    <!-- тело пресета (groups) -->
-  <group name="POI Ukraine" ru.name="POI Украина" uk.name="POI Україна" icon="Icon/Ukraine.png">
+  <group name="POI Ukraine" ru.name="POI Украина" uk.name="POI Україна" icon="icon/ukraine.png">
   
         <!-- ПРОДУКТЫ -->
-    <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="Icon/Produkty/Produkty.png">
+    <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="icon/produkty/produkty.png">
       
-          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/ATB-market.png" >
+          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/ATB-market.png" >
         <label text="Супермаркет &quot;АТБ-маркет&quot;" />
         <space />
         <key key="shop" value="supermarket" />
@@ -129,9 +128,9 @@
           
           <!-- ОБЩЕПИТ -->
           
-          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="icon/Obschepit/Obschepit.png">
+          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="/icon/obschepit/obschepit.png">
       
-          <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="https://josm.openstreetmap.de/raw-attachment/wiki/Presets/POI_Ukraine/Dominos_pizza.png" >
+          <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="/icon/obschepit/dominos_pizza.png" >
         <label text="Domino's Pizza" />
         <space />
         <key key="amenity" value="fast_food" />

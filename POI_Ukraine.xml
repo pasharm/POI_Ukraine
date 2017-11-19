@@ -103,7 +103,7 @@
         <!-- ПРОДУКТЫ -->
     <group name="Продукты" en.name="Food shops" uk.name="Продукти" icon="icon/produkty/produkty.png">
       
-          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/ATB-market.png" >
+          <item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/atbmarket.png" >
         <label text="Супермаркет &quot;АТБ-маркет&quot;" />
         <space />
         <key key="shop" value="supermarket" />
@@ -128,9 +128,9 @@
           
           <!-- ОБЩЕПИТ -->
           
-          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="/icon/obschepit/obschepit.png">
+          <group name="Общественное питание" en.name="Catering" uk.name="Громадське харчування" icon="icon/obschepit/obschepit.png">
       
-          <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="/icon/obschepit/dominos_pizza.png" >
+          <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="icon/obschepit/dominos_pizza.png" >
         <label text="Domino's Pizza" />
         <space />
         <key key="amenity" value="fast_food" />

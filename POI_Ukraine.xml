@@ -1,6 +1,6 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
   author="Mokrynskyi Pavlo"
-  version="10_2017-11-19"
+  version="11_2017-11-20"
   link="https://josm.openstreetmap.de/wiki/Presets/POI_Ukraine"
   shortdescription="POI Ukraine"
   uk.shortdescription="POI України"
@@ -98,12 +98,12 @@
   
   
    <!-- тело пресета (groups) -->
-  <group name="POI Ukraine" uk.name="POI Україна" ru.name="POI Украина" icon="icon/ukraine.png">
+  <group name="POI Ukraine" uk.name="POI Україна" ru.name="POI Украина" icon="https://pasharm.github.io/POI_Ukraine/icon/ukraine.png">
   
         <!-- ПРОДУКТЫ -->
-    <group name="Food shops" uk.name="Продукти" ru.name="Продукты" icon="icon/produkty/produkty.png">
+    <group name="Food shops" uk.name="Продукти" ru.name="Продукты" icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/produkty.png">
       
-		<item name="АТБ-маркет" type="node,closedway,multipolygon" icon="icon/produkty/atbmarket.png" >
+		<item name="АТБ-маркет" type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/atbmarket.png" >
 			<label text="Супермаркет &quot;АТБ-маркет&quot;" />
 			<space />
 			<key key="shop" value="supermarket" />
@@ -128,9 +128,9 @@
           
 			<!-- ОБЩЕПИТ -->
           
-    <group name="Catering" uk.name="Громадське харчування" ru.name="Общественное питание" icon="icon/obschepit/obschepit.png">
+    <group name="Catering" uk.name="Громадське харчування" ru.name="Общественное питание" icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/obschepit.png">
       
-		<item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="icon/obschepit/dominos_pizza.png" >
+		<item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/dominos_pizza.png" >
 			<label text="Domino's Pizza" />
 			<space />
 			<key key="amenity" value="fast_food" />
@@ -156,19 +156,34 @@
 	
 			<!-- МАГАЗИНЫ -->
 			
-    <group name="Shops" uk.name="Магазини" ru.name="Магазины" icon="icon/shops/shops.png">
+    <group name="Shops" uk.name="Магазини" ru.name="Магазины" icon="https://pasharm.github.io/POI_Ukraine/icon/shops/shops.png">
       
+		<item name="Eva"  type="node,closedway,multipolygon" >
+			<label text="Eva" />
+			<space />
+			<key key="shop" value="cosmetics" />
+			<key key="name" value="Eva" />
+			<key key="contact:website" value="http://www.eve.dp.ua/" />
+			<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00" />
+			<reference ref="level_wheelchair_address_internetaccess_footer" />
+		</item>
 
-          
     </group>
 	
 	
 			<!-- АПТЕКИ -->
 			
-    <group name="Pharmacies" uk.name="Аптеки" ru.name="Аптеки" icon="icon/pharmacies/pharmacies.png">
+    <group name="Pharmacies" uk.name="Аптеки" ru.name="Аптеки" icon="https://pasharm.github.io/POI_Ukraine/icon/pharmacies/pharmacies.png">
       
+		<item name="Аптека низьких цін"  type="node,closedway,multipolygon" >
+			<label text="Аптека низьких цін" />
+			<space />
+			<key key="amenity" value="pharmacy" />
+			<key key="name" value="Аптека низьких цін" />
+			<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00" />
+			<reference ref="level_wheelchair_address_internetaccess_footer" />
+		</item>
 
-          
     </group>
           
           

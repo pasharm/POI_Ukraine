@@ -78,7 +78,7 @@
             <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)" />
             <combo key="branch" text="Филиал (или отделение)" />
             <text key="ref" text="Номер отделения" />
-            <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" />
+            <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" display_values="есть,ограничено,нету" />
             <check key="atm" text="Банкомат (если 24/7, нанесите отдельной точкой)" />
             <preset_link preset_name="Address" />
         </chunk>

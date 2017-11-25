@@ -173,7 +173,7 @@
 
 		<group name="Shops" uk.name="Магазини" ru.name="Магазины" icon="https://pasharm.github.io/POI_Ukraine/icon/shops/shops.png">
 
-			<item name="Eva"	type="node,closedway,multipolygon" >
+			<item name="Eva"	type="node,closedway,multipolygon"  >
 				<label text="Eva" />
 				<space />
 				<key key="shop" value="cosmetics" />
@@ -201,6 +201,19 @@
 
 		</group>
 
+
+		<group name="Finance" uk.name="Фінанси" ru.name="Финансы" icon="https://pasharm.github.io/POI_Ukraine/icon/finance/finance.png">
+
+			<item name="Приват Банк"	type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/finance/privatbank.png" >
+				<label text="Приват Банк" />
+				<space />
+				<key key="amenity" value="bank" />
+				<key key="name" value="Приват Банк" />
+				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-18:00" />
+				<reference ref="bic_branch_ref_wheelchair_atm_address" />
+			</item>
+
+		</group>
 
 	</group>
 </presets>

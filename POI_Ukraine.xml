@@ -131,7 +131,7 @@
 				<key key="contact:facebook" value="https://www.facebook.com/ATB.Market.tm" />
 				<key key="contact:twitter" value="https://twitter.com/atb_market_tm" />
 				<key key="contact:youtube" value="https://www.youtube.com/user/atbmarkettm" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00" />
+				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00" display_values="24/7,Пн-Вс 08:00-22:00" />
 				<link href="http://www.atbmarket.com/maps" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
 				<key key="operator:wikipedia" value="uk:АТБ-Маркет" />
 				<key key="operator:wikidata" value="Q4054103" />

@@ -17,7 +17,6 @@
 
 	<!-- БЛОК С ШАБЛОНАМИ (CHUNKS) -->
 
-    <block name="БЛОК С ШАБЛОНАМИ" >
         <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
         <chunk id="wheelchair_address_footer">
             <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" display_values="есть,ограничено,нету" />
@@ -108,7 +107,6 @@
             <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
             <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
         </chunk>
-    </block>
 
 
 

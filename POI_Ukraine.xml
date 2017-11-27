@@ -1,217 +1,235 @@
 <presets xmlns="http://josm.openstreetmap.de/tagging-preset-1.0"
-	author="Mokrynskyi Pavlo and others"
-    uk.author="Мокринський Павло та інші"
-    ru.author="Мокринский Павел и другие"
-	version="11_2017-11-21"
-	link="https://github.com/pasharm/POI_Ukraine"
-	shortdescription="POI Ukraine"
-	uk.shortdescription="POI України"
-	ru.shortdescription="POI Украины"
-	description="Tagging preset for Ukrainian shops and amenities"
-	uk.description="Заготовки для додавання магазинів та інших закладів України"
-	ru.description="Заготовки для добавления магазинов и иных заведений Украины">
+         author="Mokrynskyi Pavlo and others"
+         uk.author="Мокринський Павло та інші"
+         ru.author="Мокринский Павел и другие"
+         version="11_2017-11-21"
+         link="https://github.com/pasharm/POI_Ukraine"
+         shortdescription="POI Ukraine"
+         uk.shortdescription="POI України"
+         ru.shortdescription="POI Украины"
+         description="Tagging preset for Ukrainian shops and amenities"
+         uk.description="Заготовки для додавання магазинів та інших закладів України"
+         ru.description="Заготовки для добавления магазинов и иных заведений Украины">
 
-	<!-- Pics have been derived mostly from https://commons.wikimedia.org/wiki/Emoji and https://wikimedia.org/ -->
-
-
-
-	<!-- БЛОК С ШАБЛОНАМИ (CHUNKS) -->
-
-        <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
-        <chunk id="wheelchair_address_footer">
-            <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" display_values="есть,ограничено,нету" />
-            <preset_link preset_name="Address" />
-        </chunk>
-
-        <!-- level_wheelchair_address_footer используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
-        <chunk id="level_wheelchair_address_footer">
-            <text key="level" text="Этаж" />
-            <reference ref="wheelchair_address_footer" />
-        </chunk>
-
-        <!-- level_wheelchair_address_internetaccess_footer используется в заведениях с wifi -->
-        <!-- При использовании в местах, отличных от общественных жирален, переделать чекбокс internet_access на комбобокс или не использовать этот чанк! -->
-        <chunk id="level_wheelchair_address_internetaccess_footer">
-            <reference ref="level_wheelchair_address_footer" />
-            <space />
-            <checkgroup columns="2">
-            <check key="internet_access" text="Беспроводный интернет (Wi-Fi)" value_on="wlan" />
-            <check key="internet_access:fee" text="Wi-Fi бесплатный" value_on="no" value_off="yes" />
-            </checkgroup>
-        </chunk>
-
-        <!-- level_wheelchair_address_dispencing_footer используется только в аптеках -->
-        <chunk id="level_wheelchair_address_dispencing_footer">
-            <reference ref="level_wheelchair_address_footer" />
-            <check key="dispensing" text="Отпуск лекарств по рецептам" />
-        </chunk>
-
-        <!-- building_address_footer используется на сооружениях -->
-        <chunk id="building_address_footer">
-            <preset_link preset_name="Building" />
-            <preset_link preset_name="Address" />
-        </chunk>
-
-        <!-- website_phone -->
-        <chunk id="website_phone">
-            <combo key="contact:website" text="Сайт" />
-            <combo key="contact:phone" text="Номер телефона" />
-        </chunk>
-
-        <!-- name_website_phone_oh используется, по факту, в медицинских учреждениях-->
-        <chunk id="name_website_phone_oh">
-            <text key="name" text="Название" />
-            <reference ref="website_phone"/>
-            <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30" />
-        </chunk>
-
-        <!-- name_ownership_website_phone используется только в учебных заведениях -->
-        <chunk id="name_ownership_website_phone">
-            <text key="name" text="Название" />
-            <combo key="ownership" text="Форма собственности" values="state,private" display_values="государственная,частная" />
-            <reference ref="website_phone"/>
-        </chunk>
-
-        <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
-        <chunk id="bic_branch_ref_wheelchair_atm_address">
-            <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)" />
-            <combo key="branch" text="Филиал (или отделение)" />
-            <text key="ref" text="Номер отделения" />
-            <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" uk.display_values="є,обмежено,немає" ru.display_values="есть,ограничено,нету" />
-            <check key="atm" text="Банкомат (если 24/7, нанесите отдельной точкой)" />
-            <preset_link preset_name="Address" />
-        </chunk>
-
-        <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждений -->
-        <chunk id="health20_providedfor">
-            <space />
-            <label text="Категории лиц:" />
-            <checkgroup columns="2">
-            <check key="provided_for:infant" text="младенцы, ползающие (&lt;1 года)" disable_off="true" />
-            <check key="provided_for:toddler" text="дети, начинающие ходить (1-3 года)" disable_off="true" />
-            <check key="provided_for:child" text="дети (4-11 лет)" disable_off="true" />
-            <check key="provided_for:adolescent" text="подростки (12-19 лет)" disable_off="true" />
-            <check key="provided_for:adult" text="взрослые (20 лет и старше)" disable_off="true" />
-            <check key="provided_for:senior" text="пожилые и пенсионеры (около 60 лет и старше)" disable_off="true" />
-            <check key="provided_for:male" text="мужчины (всех возрастов)" disable_off="true" />
-            <check key="provided_for:female" text="женщины (всех возрастов)" disable_off="true" />
-            </checkgroup>
-        </chunk>
-
-        <chunk id="health20_specialities_footer">
-            <link text="Список медицинских специализаций" href="http://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties" />
-            <preset_link preset_name="Physician's: Main field specialties" />
-            <preset_link preset_name="Physician's: Subspecialties" />
-            <preset_link preset_name="Physician's: Subsubspecialties" />
-            <preset_link preset_name="Therapists and the alternative medicine: Main field specialties" />
-            <preset_link preset_name="Therapists and the alternative medicine: Subspecialties" />
-            <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties" />
-        </chunk>
+    <!-- Pics have been derived mostly from https://commons.wikimedia.org/wiki/Emoji and https://wikimedia.org/ -->
 
 
+    <!-- БЛОК С ШАБЛОНАМИ (CHUNKS) -->
 
-	 <!-- ТЕЛО ПРЕСЕТА (GROUPS) -->
-	<group name="POI Ukraine" uk.name="POI Україна" ru.name="POI Украина" icon="https://pasharm.github.io/POI_Ukraine/icon/ukraine.png">
+    <!-- wheelchair_address_footer используется в местах, куда можно зайти -->
+    <chunk id="wheelchair_address_footer">
+        <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no"
+               display_values="есть,ограничено,нету"/>
+        <preset_link preset_name="Address"/>
+    </chunk>
 
-				<!-- ПРОДУКТЫ -->
-		<group name="Food shops" uk.name="Продукти" ru.name="Продукты" icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/produkty.png">
+    <!-- level_wheelchair_address_footer используется в местах, куда можно зайти и которые часто не на 1 этажах (в ТЦ) -->
+    <chunk id="level_wheelchair_address_footer">
+        <text key="level" text="Этаж"/>
+        <reference ref="wheelchair_address_footer"/>
+    </chunk>
 
-			<item name="АТБ-маркет" type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/atbmarket.png" >
-				<label text="Супермаркет &quot;АТБ-маркет&quot;" />
-				<space />
-				<key key="shop" value="supermarket" />
-				<key key="name" value="АТБ-маркет" />
-				<key key="brand" value="АТБ-маркет" />
-				<key key="name:ru" value="АТБ-маркет" />
-				<key key="contact:phone" value="0800500415" />
-				<key key="contact:website" value="http://www.atbmarket.com/" />
-				<key key="contact:email" value="atb.office@atbmarket.com" />
-				<key key="contact:facebook" value="https://www.facebook.com/ATB.Market.tm" />
-				<key key="contact:twitter" value="https://twitter.com/atb_market_tm" />
-				<key key="contact:youtube" value="https://www.youtube.com/user/atbmarkettm" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00" uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00" />
-				<link href="http://www.atbmarket.com/maps" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-				<key key="operator:wikipedia" value="uk:АТБ-Маркет" />
-				<key key="operator:wikidata" value="Q4054103" />
-				<reference ref="wheelchair_address_footer" />
-			</item>
+    <!-- level_wheelchair_address_internetaccess_footer используется в заведениях с wifi -->
+    <!-- При использовании в местах, отличных от общественных жирален, переделать чекбокс internet_access на комбобокс или не использовать этот чанк! -->
+    <chunk id="level_wheelchair_address_internetaccess_footer">
+        <reference ref="level_wheelchair_address_footer"/>
+        <space/>
+        <checkgroup columns="2">
+            <check key="internet_access" text="Беспроводный интернет (Wi-Fi)" value_on="wlan"/>
+            <check key="internet_access:fee" text="Wi-Fi бесплатный" value_on="no" value_off="yes"/>
+        </checkgroup>
+    </chunk>
 
-		</group>
+    <!-- level_wheelchair_address_dispencing_footer используется только в аптеках -->
+    <chunk id="level_wheelchair_address_dispencing_footer">
+        <reference ref="level_wheelchair_address_footer"/>
+        <check key="dispensing" text="Отпуск лекарств по рецептам"/>
+    </chunk>
+
+    <!-- building_address_footer используется на сооружениях -->
+    <chunk id="building_address_footer">
+        <preset_link preset_name="Building"/>
+        <preset_link preset_name="Address"/>
+    </chunk>
+
+    <!-- website_phone -->
+    <chunk id="website_phone">
+        <combo key="contact:website" text="Сайт"/>
+        <combo key="contact:phone" text="Номер телефона"/>
+    </chunk>
+
+    <!-- name_website_phone_oh используется, по факту, в медицинских учреждениях-->
+    <chunk id="name_website_phone_oh">
+        <text key="name" text="Название"/>
+        <reference ref="website_phone"/>
+        <combo key="opening_hours" text="Часы работы"
+               values="24/7,Mo-Su 09:00-22:00,Mo-Fr 07:30-19:30; Sa-Su 07:30-14:30"/>
+    </chunk>
+
+    <!-- name_ownership_website_phone используется только в учебных заведениях -->
+    <chunk id="name_ownership_website_phone">
+        <text key="name" text="Название"/>
+        <combo key="ownership" text="Форма собственности" values="state,private"
+               display_values="государственная,частная"/>
+        <reference ref="website_phone"/>
+    </chunk>
+
+    <!-- bic_branch_ref_wheelchair_atm_address используется в банках -->
+    <chunk id="bic_branch_ref_wheelchair_atm_address">
+        <combo key="bic" text="BIC/SWIFT-код (например UBSWUS33XXX)"/>
+        <combo key="branch" text="Филиал (или отделение)"/>
+        <text key="ref" text="Номер отделения"/>
+        <combo key="wheelchair" text="Инвалидные коляски" values="yes,limited,no" uk.display_values="є,обмежено,немає"
+               ru.display_values="есть,ограничено,нету"/>
+        <check key="atm" text="Банкомат (если 24/7, нанесите отдельной точкой)"/>
+        <preset_link preset_name="Address"/>
+    </chunk>
+
+    <!-- health20_providedfor и health20_specialities_footer — схема тегирования Healthcare_2.0 только для медицинских учреждений -->
+    <chunk id="health20_providedfor">
+        <space/>
+        <label text="Категории лиц:"/>
+        <checkgroup columns="2">
+            <check key="provided_for:infant" text="младенцы, ползающие (&lt;1 года)" disable_off="true"/>
+            <check key="provided_for:toddler" text="дети, начинающие ходить (1-3 года)" disable_off="true"/>
+            <check key="provided_for:child" text="дети (4-11 лет)" disable_off="true"/>
+            <check key="provided_for:adolescent" text="подростки (12-19 лет)" disable_off="true"/>
+            <check key="provided_for:adult" text="взрослые (20 лет и старше)" disable_off="true"/>
+            <check key="provided_for:senior" text="пожилые и пенсионеры (около 60 лет и старше)" disable_off="true"/>
+            <check key="provided_for:male" text="мужчины (всех возрастов)" disable_off="true"/>
+            <check key="provided_for:female" text="женщины (всех возрастов)" disable_off="true"/>
+        </checkgroup>
+    </chunk>
+
+    <chunk id="health20_specialities_footer">
+        <link text="Список медицинских специализаций"
+              href="http://wiki.openstreetmap.org/wiki/RU:Proposed_features/Healthcare_2.0/Specialties"/>
+        <preset_link preset_name="Physician's: Main field specialties"/>
+        <preset_link preset_name="Physician's: Subspecialties"/>
+        <preset_link preset_name="Physician's: Subsubspecialties"/>
+        <preset_link preset_name="Therapists and the alternative medicine: Main field specialties"/>
+        <preset_link preset_name="Therapists and the alternative medicine: Subspecialties"/>
+        <preset_link preset_name="Therapists and the alternative medicine: Subsubspecialties"/>
+    </chunk>
 
 
-			<!-- ОБЩЕПИТ -->
+    <!-- ТЕЛО ПРЕСЕТА (GROUPS) -->
+    <group name="POI Ukraine" uk.name="POI Україна" ru.name="POI Украина"
+           icon="https://pasharm.github.io/POI_Ukraine/icon/ukraine.png">
 
-		<group name="Catering" uk.name="Громадське харчування" ru.name="Общественное питание" icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/obschepit.png">
+        <!-- ПРОДУКТЫ -->
+        <group name="Food shops" uk.name="Продукти" ru.name="Продукты"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/produkty.png">
 
-			<item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца" type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/dominos_pizza.png" >
-				<label text="Domino's Pizza" />
-				<space />
-				<key key="amenity" value="fast_food" />
-				<key key="name" value="Domino's Pizza" />
-				<key key="brand" value="Domino's Pizza" />
-				<key key="contact:phone" value="+380442221111" />
-				<key key="contact:website" value="http://dominos.ua/" />
-				<key key="contact:email" value="info@dominos.ua" />
-				<key key="contact:facebook" value="https://www.facebook.com/DominosPizzaUkraine/" />
-				<key key="contact:vk" value="https://vk.com/dominospizzaukraine" />
-				<key key="cuisine" value="pizza" />
-				<key key="diet:vegetarian" value="no" />
-				<key key="delivery" value="yes" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00" uk.display_values="24/7,Пн-Нд 08:00-24:00" ru.display_values="24/7,Пн-Вс 08:00-24:00" />
-				<link href="http://dominos.ua/ru/where_to_buy/" text="Ссылка на сайт (часы работы, координаты и т.п.)" />
-				<key key="brand:wikipedia" value="uk:Domino%27s_Pizza" />
-				<key key="brand:wikidata" value="Q839466" />
-				<reference ref="level_wheelchair_address_internetaccess_footer" />
-			</item>
+            <item name="АТБ-маркет" type="node,closedway,multipolygon"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/produkty/atbmarket.png">
+                <label text="Супермаркет &quot;АТБ-маркет&quot;"/>
+                <space/>
+                <key key="shop" value="supermarket"/>
+                <key key="name" value="АТБ-маркет"/>
+                <key key="brand" value="АТБ-маркет"/>
+                <key key="name:ru" value="АТБ-маркет"/>
+                <key key="contact:phone" value="0800500415"/>
+                <key key="contact:website" value="http://www.atbmarket.com/"/>
+                <key key="contact:email" value="atb.office@atbmarket.com"/>
+                <key key="contact:facebook" value="https://www.facebook.com/ATB.Market.tm"/>
+                <key key="contact:twitter" value="https://twitter.com/atb_market_tm"/>
+                <key key="contact:youtube" value="https://www.youtube.com/user/atbmarkettm"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
+                <link href="http://www.atbmarket.com/maps" text="Ссылка на сайт (часы работы, координаты и т.п.)"/>
+                <key key="operator:wikipedia" value="uk:АТБ-Маркет"/>
+                <key key="operator:wikidata" value="Q4054103"/>
+                <reference ref="wheelchair_address_footer"/>
+            </item>
 
-		</group>
-
-
-			<!-- МАГАЗИНЫ -->
-
-		<group name="Shops" uk.name="Магазини" ru.name="Магазины" icon="https://pasharm.github.io/POI_Ukraine/icon/shops/shops.png">
-
-			<item name="Eva"	type="node,closedway,multipolygon"  >
-				<label text="Eva" />
-				<space />
-				<key key="shop" value="cosmetics" />
-				<key key="name" value="Eva" />
-				<key key="contact:website" value="http://www.eve.dp.ua/" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00" uk.display_values="24/7,Пн-Нд 08:00-24:00" ru.display_values="24/7,Пн-Вс 08:00-24:00" />
-				<reference ref="level_wheelchair_address_internetaccess_footer" />
-			</item>
-
-		</group>
+        </group>
 
 
-			<!-- АПТЕКИ -->
+        <!-- ОБЩЕПИТ -->
 
-		<group name="Pharmacies" uk.name="Аптеки" ru.name="Аптеки" icon="https://pasharm.github.io/POI_Ukraine/icon/pharmacies/pharmacies.png">
+        <group name="Catering" uk.name="Громадське харчування" ru.name="Общественное питание"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/obschepit.png">
 
-			<item name="Аптека низьких цін"	type="node,closedway,multipolygon" >
-				<label text="Аптека низьких цін" />
-				<space />
-				<key key="amenity" value="pharmacy" />
-				<key key="name" value="Аптека низьких цін" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00" uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00" />
-				<reference ref="level_wheelchair_address_internetaccess_footer" />
-			</item>
+            <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца"
+                  type="node,closedway,multipolygon"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/obschepit/dominos_pizza.png">
+                <label text="Domino's Pizza"/>
+                <space/>
+                <key key="amenity" value="fast_food"/>
+                <key key="name" value="Domino's Pizza"/>
+                <key key="brand" value="Domino's Pizza"/>
+                <key key="contact:phone" value="+380442221111"/>
+                <key key="contact:website" value="http://dominos.ua/"/>
+                <key key="contact:email" value="info@dominos.ua"/>
+                <key key="contact:facebook" value="https://www.facebook.com/DominosPizzaUkraine/"/>
+                <key key="contact:vk" value="https://vk.com/dominospizzaukraine"/>
+                <key key="cuisine" value="pizza"/>
+                <key key="diet:vegetarian" value="no"/>
+                <key key="delivery" value="yes"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-24:00" ru.display_values="24/7,Пн-Вс 08:00-24:00"/>
+                <link href="http://dominos.ua/ru/where_to_buy/" text="Ссылка на сайт (часы работы, координаты и т.п.)"/>
+                <key key="brand:wikipedia" value="uk:Domino%27s_Pizza"/>
+                <key key="brand:wikidata" value="Q839466"/>
+                <reference ref="level_wheelchair_address_internetaccess_footer"/>
+            </item>
 
-		</group>
+        </group>
 
 
-		<group name="Finance" uk.name="Фінанси" ru.name="Финансы" icon="https://pasharm.github.io/POI_Ukraine/icon/finance/finance.png">
+        <!-- МАГАЗИНЫ -->
 
-			<item name="Приват Банк"	type="node,closedway,multipolygon" icon="https://pasharm.github.io/POI_Ukraine/icon/finance/privatbank.png" >
-				<label text="Приват Банк" />
-				<space />
-				<key key="amenity" value="bank" />
-				<key key="name" value="Приват Банк" />
-				<combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-18:00" uk.display_values="24/7,Пн-Нд 08:00-18:00" ru.display_values="24/7,Пн-Вс 08:00-18:00" />
-				<reference ref="bic_branch_ref_wheelchair_atm_address" />
-			</item>
+        <group name="Shops" uk.name="Магазини" ru.name="Магазины"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/shops/shops.png">
 
-		</group>
+            <item name="Eva" type="node,closedway,multipolygon">
+                <label text="Eva"/>
+                <space/>
+                <key key="shop" value="cosmetics"/>
+                <key key="name" value="Eva"/>
+                <key key="contact:website" value="http://www.eve.dp.ua/"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-24:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-24:00" ru.display_values="24/7,Пн-Вс 08:00-24:00"/>
+                <reference ref="level_wheelchair_address_internetaccess_footer"/>
+            </item>
 
-	</group>
+        </group>
+
+
+        <!-- АПТЕКИ -->
+
+        <group name="Pharmacies" uk.name="Аптеки" ru.name="Аптеки"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/pharmacies/pharmacies.png">
+
+            <item name="Аптека низьких цін" type="node,closedway,multipolygon">
+                <label text="Аптека низьких цін"/>
+                <space/>
+                <key key="amenity" value="pharmacy"/>
+                <key key="name" value="Аптека низьких цін"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
+                <reference ref="level_wheelchair_address_internetaccess_footer"/>
+            </item>
+
+        </group>
+
+
+        <group name="Finance" uk.name="Фінанси" ru.name="Финансы"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/finance/finance.png">
+
+            <item name="Приват Банк" type="node,closedway,multipolygon"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/finance/privatbank.png">
+                <label text="Приват Банк"/>
+                <space/>
+                <key key="amenity" value="bank"/>
+                <key key="name" value="Приват Банк"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-18:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-18:00" ru.display_values="24/7,Пн-Вс 08:00-18:00"/>
+                <reference ref="bic_branch_ref_wheelchair_atm_address"/>
+            </item>
+
+        </group>
+
+    </group>
 </presets>

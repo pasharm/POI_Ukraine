@@ -1,7 +1,7 @@
 # POI Ukraine for JOSM
 
 | [In English](https://github.com/pasharm/POI_Ukraine#in-english) |  [Українською](https://github.com/pasharm/POI_Ukraine#Українською) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
-|--------------------|--------------------|--------------------|
+|--------------------|-------------------------|-------------------------|
 
 .
 

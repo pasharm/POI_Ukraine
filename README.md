@@ -1,17 +1,12 @@
 # POI Ukraine for JOSM
 
-| [In English](https://github.com/pasharm/POI_Ukraine#In-English) |  [На Українській](https://github.com/pasharm/POI_Ukraine#На-Українській) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
+| [In English](https://github.com/pasharm/POI_Ukraine#in-english) |  [На Українській](https://github.com/pasharm/POI_Ukraine#На-Українській) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
 |--------------------|--------------------|--------------------|
 
 .
 
-En: Tagging preset for Ukrainian shops and amenities.
-
-Uk: Заготовки для додавання магазинів та інших закладів України.
-
-Ru: Заготовки для добавления магазинов и иных заведений Украины.
-
 # In English
+Tagging preset for Ukrainian shops and amenities.
 
 ## Installation
 Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in list "POI Ukraine" - Press the arrow to the right - Ok.
@@ -21,9 +16,10 @@ Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in 
 
 
 # На Українській
+Заготовки для додавання магазинів та інших закладів України.
 
 ## Встановлення
-Правити - Налаштування (F12) - Налаштування мапи (Третя вкладка) - Заготовки тегів - Знайти в списку "POI України" - Натиснути на стрілку вправо - Ок.
+Правити - Налаштування (F12) - Налаштування мапи (Третя вкладка) - Заготовки теґів - Знайти в списку "POI України" - Натиснути на стрілку вправо - Ок.
 
 
 ## Поліпшення пресета
@@ -31,6 +27,7 @@ Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in 
 
 
 # На Русском
+Заготовки для добавления магазинов и иных заведений Украины.
 
 ## Установка
 Правка - Настройки (F12) - Настройки карты (Третья вкладка) - Заготовки тегов - Найти в списке "POI Украины" - Нажать на стрелку вправо - Ок.

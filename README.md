@@ -1,7 +1,8 @@
 # POI Ukraine for JOSM
 
 | [In English](https://github.com/pasharm/POI_Ukraine#In-English) |  [На Українській](https://github.com/pasharm/POI_Ukraine#На-Українській) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
-| -------- |: ------------- :| --------- :|
+|--------------------|--------------------|--------------------|
+
 .
 
 En: Tagging preset for Ukrainian shops and amenities.

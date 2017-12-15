@@ -3,8 +3,7 @@
 | [In English](https://github.com/pasharm/POI_Ukraine#in-english) |  [На Українській](https://github.com/pasharm/POI_Ukraine#На-Українській) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
 |--------------------|--------------------|--------------------|
 
-# 
-
+.
 # In English
 Tagging preset for Ukrainian shops and amenities.
 
@@ -14,7 +13,7 @@ Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in 
 ## Improving the preset
 [Write in Issues](https://github.com/pasharm/POI_Ukraine/issues/new) that you add and an approximate (the more detailed, the luchshe) a set of tags.
 
-# 
+. 
 # На Українській
 Заготовки для додавання магазинів та інших закладів України.
 
@@ -25,7 +24,7 @@ Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in 
 ## Поліпшення пресета
 [Напишіть в Issues](https://github.com/pasharm/POI_Ukraine/issues/new) що потрібно додати і приблизний (чим детальніше, тим краще) набір тегів.
 
-# 
+. 
 # На Русском
 Заготовки для добавления магазинов и иных заведений Украины.
 

@@ -1,6 +1,6 @@
 # POI Ukraine for JOSM
 
-| [In English](https://github.com/pasharm/POI_Ukraine#in-english) |  [На Українській](https://github.com/pasharm/POI_Ukraine#Українською) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
+| [In English](https://github.com/pasharm/POI_Ukraine#in-english) |  [Українською](https://github.com/pasharm/POI_Ukraine#Українською) | [На Русском](https://github.com/pasharm/POI_Ukraine#На-Русском)  |
 |--------------------|--------------------|--------------------|
 
 .
@@ -17,6 +17,7 @@ Edit - Preferences (F12) - Map Settings (Third tab) - Tagging Presets - Find in 
 . 
 
 # Українською
+
 Заготовки для додавання магазинів та інших закладів України.
 
 ## Встановлення

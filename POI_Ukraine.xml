@@ -122,13 +122,18 @@
                icon="https://pasharm.github.io/POI_Ukraine/icon/food/food.png">
 
 
-            <!-- Кафе  -->
+            <item name="---     Кафе:     ---">
+            </item>
 
 
-            <!-- Ресторан  -->
+            <separator/>
+            <item name="---     Ресторан:     ---">
+            </item>
 
 
-            <!-- Фастфуд (быстрое питание)  -->
+            <separator/>
+            <item name="---     Фастфуд (быстрое питание):     ---">
+            </item>
 
             <item name="Domino's Pizza" uk.name="Доміно'с Піцца" ru.name="Домино’c Пицца"
                   type="node,closedway,multipolygon"
@@ -160,11 +165,11 @@
         <group name="Health" uk.name="Здоров'я" ru.name="Здоровье"
                icon="https://pasharm.github.io/POI_Ukraine/icon/health/health.png">
 
-            <!-- Аптека -->
 
-            <group name="Pharmacy" uk.name="Аптека" ru.name="Аптека"
+            <item name="---     Pharmacy:      ---" uk.name="---     Аптека:      ---"
+                  ru.name="---     Аптека:      ---"
                    icon="https://pasharm.github.io/POI_Ukraine/icon/health/pharmacy/pharmacy.png">
-
+            </item>
                 <item name="Аптека низьких цін" type="node,closedway,multipolygon">
                     <label text="Аптека низьких цін"/>
                     <space/>
@@ -175,9 +180,10 @@
                     <reference ref="level_wheelchair_address_internetaccess_footer"/>
                 </item>
 
-            </group>
 
-            <!-- Стоматология -->
+            <separator/>
+            <item name="---     Стоматология:     ---">
+            </item>
 
 
         </group>
@@ -187,7 +193,8 @@
                icon="https://pasharm.github.io/POI_Ukraine/icon/shop/shop.png">
 
 
-            <!-- Бытовая химия, косметика -->
+            <item name="---      Бытовая химия, косметика:     ---">
+            </item>
 
             <item name="Eva" type="node,closedway,multipolygon">
                 <label text="Eva"/>
@@ -200,111 +207,158 @@
                 <reference ref="level_wheelchair_address_internetaccess_footer"/>
             </item>
 
-            <!-- Все по одной цене -->
+            <separator/>
+            <item name="---     Все по одной цене:     ---">
+            </item>
 
 
-            <!-- Зоомагазин -->
+            <separator/>
+            <item name="---     Зоомагазин:     ---">
+            </item>
 
 
-            <!-- Ломбард -->
+            <separator/>
+            <item name="---     Ломбард:     ---">
+            </item>
 
 
-            <!-- Лотерейные билеты -->
+            <separator/>
+            <item name="---     Лотерейные билеты:     ---">
+            </item>
 
 
-            <!-- Салон Связи -->
+            <separator/>
+            <item name="---     Салон Связи:     ---">
+            </item>
 
 
-            <!-- Супермаркет -->
-
-            <!-- ПРОДУКТЫ -->
-            <group name="Supermarket" uk.name="Супермаркет" ru.name="Супермаркет"
-                   icon="https://pasharm.github.io/POI_Ukraine/icon/shop/supermarket/supermarket.png">
+            <separator/>
 
 
-                <item name="АТБ-маркет" type="node,closedway,multipolygon"
-                      icon="https://pasharm.github.io/POI_Ukraine/icon/shop/supermarket/atbmarket.png">
-                    <label text="Супермаркет &quot;АТБ-маркет&quot;"/>
-                    <space/>
-                    <key key="shop" value="supermarket"/>
-                    <key key="name" value="АТБ-маркет"/>
-                    <key key="brand" value="АТБ-маркет"/>
-                    <key key="name:ru" value="АТБ-маркет"/>
-                    <key key="contact:phone" value="0800500415"/>
-                    <key key="contact:website" value="http://www.atbmarket.com/"/>
-                    <key key="contact:email" value="atb.office@atbmarket.com"/>
-                    <key key="contact:facebook" value="https://www.facebook.com/ATB.Market.tm"/>
-                    <key key="contact:twitter" value="https://twitter.com/atb_market_tm"/>
-                    <key key="contact:youtube" value="https://www.youtube.com/user/atbmarkettm"/>
-                    <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
-                           uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
-                    <link href="http://www.atbmarket.com/maps" text="Ссылка на сайт (часы работы, координаты и т.п.)"/>
-                    <key key="operator:wikipedia" value="uk:АТБ-Маркет"/>
-                    <key key="operator:wikidata" value="Q4054103"/>
-                    <reference ref="wheelchair_address_footer"/>
-                </item>
+            <item name="---     Supermarket:     ---" uk.name="---     Супермаркет:     ---"
+                  ru.name="---     Супермаркет:     ---"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/shop/supermarket/supermarket.png">
+            </item>
+
+            <item name="АТБ-маркет" type="node,closedway,multipolygon"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/shop/supermarket/atbmarket.png">
+                <label text="Супермаркет &quot;АТБ-маркет&quot;"/>
+                <space/>
+                <key key="shop" value="supermarket"/>
+                <key key="name" value="АТБ-маркет"/>
+                <key key="brand" value="АТБ-маркет"/>
+                <key key="name:ru" value="АТБ-маркет"/>
+                <key key="contact:phone" value="0800500415"/>
+                <key key="contact:website" value="http://www.atbmarket.com/"/>
+                <key key="contact:email" value="atb.office@atbmarket.com"/>
+                <key key="contact:facebook" value="https://www.facebook.com/ATB.Market.tm"/>
+                <key key="contact:twitter" value="https://twitter.com/atb_market_tm"/>
+                <key key="contact:youtube" value="https://www.youtube.com/user/atbmarkettm"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
+                <link href="http://www.atbmarket.com/maps" text="Ссылка на сайт (часы работы, координаты и т.п.)"/>
+                <key key="operator:wikipedia" value="uk:АТБ-Маркет"/>
+                <key key="operator:wikidata" value="Q4054103"/>
+                <reference ref="wheelchair_address_footer"/>
+            </item>
 
 
-            </group>
-            <!-- Торговый автомат -->
+            <separator/>
+            <item name="---     Торговый автомат:     ---">
+            </item>
 
 
-            <!-- Хлебобулочные и кондитерские изделия -->
+            <separator/>
+            <item name="---     Хлебобулочные и кондитерские изделия:     ---">
+            </item>
 
 
-            <!-- Хозяйственные товары -->
+            <separator/>
+            <item name="---     Хозяйственные товары:     ---">
+            </item>
 
 
-            <!-- Канцелярия -->
+            <separator/>
+            <item name="---     Канцелярия:     ---">
+            </item>
 
 
-            <!-- Чайный магазин -->
+            <separator/>
+            <item name="---     Чайный магазин:     ---">
+            </item>
 
 
         </group>
 
 
-        <group name="Офис">
+        <group name="Office" uk.name="Офіс" ru.name="Офис"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/office/office.png">
 
-            <!-- Страховая компания -->
+            <item name="---     Страховая компания:     ---">
+            </item>
 
-            <!-- Турагенство -->
+            <separator/>
+            <item name="---     Турагенство:     ---">
+            </item>
 
 
         </group>
 
-        <group name="Сервис">
+        <group name="Service" uk.name="Сервіс" ru.name="Сервис"
+               icon="https://pasharm.github.io/POI_Ukraine/icon/service/service.png">
 
-            <!-- Парикмахерская -->
 
-            <!-- Салон красоты -->
+            <item name="---     Парикмахерская:     ---">
+            </item>
 
-            <!-- Химчистка -->
+            <item name="Євро перукарня" type="node,closedway,multipolygon">
+                <label text="Супермаркет &quot;АТБ-маркет&quot;"/>
+                <space/>
+                <key key="shop" value="hairdresser"/>
+                <key key="name" value="Євро перукарня"/>
+            </item>
 
-            <!-- Прачечная -->
 
-            <!-- Тату салон -->
+            <separator/>
+            <item name="---     Салон красоты:     ---">
+            </item>
+
+
+            <separator/>
+            <item name="---     Химчистка:     ---">
+            </item>
+
+            <separator/>
+            <item name="---     Прачечная:     ---">
+            </item>
+
+            <separator/>
+            <item name="---     Тату салон:     ---">
+            </item>
 
 
         </group>
 
         <group name="Транспорт">
 
-            <!-- АЗС -->
+            <item name="---     АЗС:     ---">
+            </item>
 
 
         </group>
 
         <group name="Спорт">
 
-            <!-- Фитнес-центр -->
+            <item name="---     Фитнес-центр:     ---">
+            </item>
 
 
         </group>
 
         <group name="Туризм">
 
-            <!-- Хостел -->
+            <item name="---     Хостел:     ---">
+            </item>
 
 
         </group>
@@ -313,7 +367,8 @@
         <group name="Finance" uk.name="Фінанси" ru.name="Финансы"
                icon="https://pasharm.github.io/POI_Ukraine/icon/finance/finance.png">
 
-            <!-- Банк -->
+            <item name="---     Банк:     ---">
+            </item>
 
             <item name="Приват Банк" type="node,closedway,multipolygon"
                   icon="https://pasharm.github.io/POI_Ukraine/icon/finance/privatbank.png">
@@ -327,13 +382,21 @@
             </item>
 
 
-            <!-- Банкомат -->
+            <separator/>
+            <item name="---     Банкомат:     ---">
+            </item>
 
-            <!-- Платежный терминал -->
+            <separator/>
+            <item name="---     Платежный терминал:     ---">
+            </item>
 
-            <!-- Обмен валют -->
+            <separator/>
+            <item name="---     Обмен валют:     ---">
+            </item>
 
-            <!-- Финансовая контора -->
+            <separator/>
+            <item name="---     Финансовая контора:     ---">
+            </item>
 
 
         </group>

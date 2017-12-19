@@ -168,17 +168,17 @@
 
             <item name="---     Pharmacy:      ---" uk.name="---     Аптека:      ---"
                   ru.name="---     Аптека:      ---"
-                   icon="https://pasharm.github.io/POI_Ukraine/icon/health/pharmacy/pharmacy.png">
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/health/pharmacy/pharmacy.png">
             </item>
-                <item name="Аптека низьких цін" type="node,closedway,multipolygon">
-                    <label text="Аптека низьких цін"/>
-                    <space/>
-                    <key key="amenity" value="pharmacy"/>
-                    <key key="name" value="Аптека низьких цін"/>
-                    <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
-                           uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
-                    <reference ref="level_wheelchair_address_internetaccess_footer"/>
-                </item>
+            <item name="Аптека низьких цін" type="node,closedway,multipolygon">
+                <label text="Аптека низьких цін"/>
+                <space/>
+                <key key="amenity" value="pharmacy"/>
+                <key key="name" value="Аптека низьких цін"/>
+                <combo key="opening_hours" text="Часы работы" values="24/7,Mo-Su 08:00-22:00"
+                       uk.display_values="24/7,Пн-Нд 08:00-22:00" ru.display_values="24/7,Пн-Вс 08:00-22:00"/>
+                <reference ref="level_wheelchair_address_internetaccess_footer"/>
+            </item>
 
 
             <separator/>
@@ -282,6 +282,28 @@
             <item name="---     Канцелярия:     ---">
             </item>
 
+            <separator/>
+            <item name="---     Kiosk:     ---" uk.name="---     Кіоск:     ---"
+                  ru.name="---     Киоск:     ---"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/shop/kiosk/kiosk.png">
+            </item>
+
+            <item name="T-Kyosk" uk.name="Т-Кіоск" ru.name="Т-Киоск"
+                  type="node,closedway" preset_name_label="true"
+                  icon="https://pasharm.github.io/POI_Ukraine/icon/shop/kiosk/tkiosk.png">
+                <space/>
+                <combo key="opening_hours" text="Часы работы"
+                       values="24/7,Mo-Su 09:00-21:00"/>
+                <key key="building" value="kiosk"/>
+                <key key="building:levels" value="1"/>
+                <key key="name" value="Т-Кіоск"/>
+                <key key="name:en" value="T-Kyosk"/>
+                <key key="name:uk" value="Т-Кіоск"/>
+                <key key="name:ru" value="Т-Киоск"/>
+                <key key="shop" value="kiosk"/>
+                <key key="tobacco" value="yes"/>
+                <reference ref="address_building_footer"/>
+            </item>
 
             <separator/>
             <item name="---     Чайный магазин:     ---">
